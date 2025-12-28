@@ -1,0 +1,35 @@
+create database online_food_delivery;
+use online_food_delivery;
+
+create table food_orders (
+    order_id varchar(20) primary key,
+    customer_id varchar(20),
+    customer_age int,
+    customer_gender varchar(10),
+    city varchar(50),
+    area varchar(50),
+    restaurant_id varchar(20),
+    restaurant_name varchar(100),
+    cuisine_type varchar(50),
+    order_date date,
+    order_time time,
+    delivery_time_min float,
+    distance_km float,
+    order_value float,
+    discount_applied float,
+    final_amount float,
+    payment_mode varchar(20),
+    order_status varchar(20),
+    cancellation_reason varchar(100),
+    delivery_partner_id varchar(20),
+    delivery_rating float,
+    restaurant_rating float,
+    order_day varchar(20),
+    peak_hour varchar(20),
+    profit_margin float,
+    order_day_type varchar(20),
+    peak_hour_flag varchar(20),
+    profit_margin_pct float,
+    delivery_performance varchar(30),
+    customer_age_group varchar(20)
+);
